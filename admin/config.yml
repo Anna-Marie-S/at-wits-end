@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Anna-Marie-S/at-wits-end
 
   # This line should *not* be indented
