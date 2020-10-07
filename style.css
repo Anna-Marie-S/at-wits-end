@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Alcubierre";
+    src: url(./Alcubierre.otf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+
+}
+
+body{
+    background-color:  #e0e9eb;
+}
+
+.sidebar{
+    width: 260px;
+    position: fixed;
+    z-index:1;
+    top: 200px;
+    left: 20px;
+    background-color: #e0e9eb;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 18px black;
+}
+
+
+p, navbar, a{
+    color: lightslategray;
+    font-size: 18px;
+    font-family:"Poppins";
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Poppins";
+    color: lightslategray;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    border:none;
+    box-shadow:inset 2px 0px 2px 0px rgba(255,255,255,.5),
+    7px 0px 20px 0px rgba(0,0,0,.1),
+    4px 0px 5px 0px rgba(0,0,0,.1);
+   outline: none;
+    position:relative;
+}
+
+
+button:before, button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #051e3e;
+    transition:400ms ease all;
+  }
+ 
+  button:after {
+      right: inherit;
+      top:inherit;
+      left: 0;
+      bottom: 0;
+
+  }
+
+  button:hover:before, button:hover:after {
+      width: 100%;
+      transition: 800ms ease all;
+  }
+
+
+
+li{
+    text-align:center;
+    list-style-type: none;
+   padding: 10px;
+}
+
+span {
+    color: purple;
+}
+header {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    height: 12vh;
+    padding: 20px;
+}
+
+.title {
+    color: lightslategray;
+    font-family: "Alcubierre";  
+}
+
+.image-container {
+    display: flex;
+    position: absolute;
+    height: 70vh;
+    left:300px;
+    top: 12vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.image-container img{
+    padding: 10px;
+    cursor:pointer;
+    width:300px;
+    height: 300px;
+    
+}
+
+.pic {
+    transition: transform 1s;
+}
+
+.pic:hover {
+    transform:scale(1.1) ;
+}
