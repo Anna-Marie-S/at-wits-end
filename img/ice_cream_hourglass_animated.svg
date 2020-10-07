@@ -1,0 +1,30 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<!--background-->
+
+<circle cx="150" cy="150" r="130" fill="#98F5A1" />
+<circle cx="150" cy="150" r="120" fill="white" />
+<circle cx="150" cy="150" r="100" fill="#98F5A1" />
+
+<!--circle with rotating motion-->
+<g>
+<circle cx="150" cy="200" r="20" fill="#E476D9">
+<animate attributeName="fill" values="#E476D9; #E476D9; none; none" keytimes="0; 0.99; 1; 1.1" dur="2s" repeatCount="indefinite" />
+<animateTransform attributeName="transform" type="rotate" from="0 150 150" to="-360 150 150" dur="2s" fill="freeze" repeatCount="indefinite" />
+</circle>
+</g>
+
+<!--circle with vertical motion-->
+<circle cx="150" cy="100" r="20" fill="none">
+<animate attributeName="fill" begin="1s" dur="2s" values="#E476D9; none" keytimes="0.9; 1.1" repeatCount="indefinite" />
+<animateMotion path="M 0 0 v100 Z" begin="1s" dur="2s" repeatCount="indefinite" />
+</circle>
+
+<!--ice cream cone-->
+
+<path fill="#F5D098" d="M130,200 L150,270 L170,200 Z" stroke-width="3px">
+<animateTransform attributeName="transform" type="rotate" from="0 150 150" to="-360 150 150" dur="2s" fill="freeze" repeatCount="indefinite" />
+</path>
+
+</svg>
+
