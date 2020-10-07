@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   repo: Anna-Marie-S/at-wits-end
+  branch: main
 
   # This line should *not* be indented
 publish_mode: editorial_workflow
